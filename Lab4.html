@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        a {
+            display: block;
+            margin: 20px;
+            padding: 15px;
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+            background-color: #00c3c3;
+            border-radius: 5px;
+            width: 250px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        a:hover {
+            background-color: #008080;
+        }
+        .image-container {
+            margin: 30px;
+        }
+        img {
+            width: 600px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to the Main Page</h1>
+    
+    <!-- Links to other pages -->
+    <a href="timetable.html" target="_blank">View Seminar Schedule (Table)</a>
+    <a href="courseregistration.html" target="_blank">Course Registration Form</a>
+    <a href="portfolio.html" target="_blank">Portfolio</a>
+
+    <div class="image-container">
+        <!-- Image with clickable elements -->
+        <h2>Click on the elements below for more details</h2>
+        <img src="airforce1.jpg" alt="AirForce1" usemap="#imagemap">
+
+        <!-- Defining clickable areas on the image -->
+        <map name="imagemap">
+            <area shape="rect" coords="50,50,150,150" href="description.html" alt="Airforce1" title="Airforce1">
+        </map>
+    </div>
+
+</body>
+</html>

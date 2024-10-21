@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCQ Question Paper with Radio Buttons and Submit</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .question-paper {
+            background-color: #fff;
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            border: 2px solid #ddd;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        h2 {
+            color: #16a085;
+        }
+
+        .questions {
+            margin-top: 20px;
+        }
+
+        .question {
+            margin-bottom: 20px;
+        }
+
+        .options {
+            margin-left: 20px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        .instruction {
+            background-color: #f0f8ff;
+            padding: 10px;
+            border-left: 5px solid #16a085;
+        }
+
+        label {
+            margin-right: 15px;
+        }
+
+        .submit-button {
+            display: block;
+            margin: 30px auto;
+            padding: 10px 20px;
+            background-color: #16a085;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .submit-button:hover {
+            background-color: #149174;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="question-paper">
+        <h1 style="text-decoration: underline;">MCQ Question Paper</h1>
+        <h2 style="text-align: center;">Subject: Web Development</h2>
+
+        <p style="font-style: italic;">Time: 1 hour</p>
+        <p style="font-weight: bold;">Maximum Marks: 50</p>
+
+        <div class="instruction">
+            <p><strong>Instructions:</strong></p>
+            <ul>
+                <li>Each question carries 5 marks.</li>
+                <li>Choose the correct option (A, B, C, or D).</li>
+                <li>Use radio buttons to select your answer.</li>
+            </ul>
+        </div>
+
+        <form id="mcqForm" action="submit.html" method="post">
+            <div class="questions">
+                
+                <div class="question" style="color: #2980b9;">
+                    <p><strong>Q1.</strong> What does HTML stand for? <span style="float: right;">[5 Marks]</span></p>
+                    <div class="options">
+                        <label><input type="radio" name="q1" value="A"> A) Hyperlinks and Text Markup Language</label><br>
+                        <label><input type="radio" name="q1" value="B"> B) Hyper Text Markup Language</label><br>
+                        <label><input type="radio" name="q1" value="C"> C) Home Tool Markup Language</label><br>
+                        <label><input type="radio" name="q1" value="D"> D) Hyperlink Transfer Markup Language</label>
+                    </div>
+                </div>
+
+                
+                <div class="question" style="color: #2980b9;">
+                    <p><strong>Q2.</strong> Which tag is used to define an unordered list in HTML? <span style="float: right;">[5 Marks]</span></p>
+                    <div class="options">
+                        <label><input type="radio" name="q2" value="A"> A) &lt;ul&gt;</label><br>
+                        <label><input type="radio" name="q2" value="B"> B) &lt;ol&gt;</label><br>
+                        <label><input type="radio" name="q2" value="C"> C) &lt;li&gt;</label><br>
+                        <label><input type="radio" name="q2" value="D"> D) &lt;dl&gt;</label>
+                    </div>
+                </div>
+
+                
+                <div class="question" style="color: #2980b9;">
+                    <p><strong>Q3.</strong> Which CSS property is used to change the background color of an element? <span style="float: right;">[5 Marks]</span></p>
+                    <div class="options">
+                        <label><input type="radio" name="q3" value="A"> A) color</label><br>
+                        <label><input type="radio" name="q3" value="B"> B) bgcolor</label><br>
+                        <label><input type="radio" name="q3" value="C"> C) background-color</label><br>
+                        <label><input type="radio" name="q3" value="D"> D) background</label>
+                    </div>
+                </div>
+
+             
+                <div class="question" style="color: #2980b9;">
+                    <p><strong>Q4.</strong> What is the correct syntax for referring to an external CSS file? <span style="float: right;">[5 Marks]</span></p>
+                    <div class="options">
+                        <label><input type="radio" name="q4" value="A"> A) &lt;link rel="stylesheet" href="style.css"&gt;</label><br>
+                        <label><input type="radio" name="q4" value="B"> B) &lt;style src="style.css"&gt;</label><br>
+                        <label><input type="radio" name="q4" value="C"> C) &lt;stylesheet&gt;style.css&lt;/stylesheet&gt;</label><br>
+                        <label><input type="radio" name="q4" value="D"> D) &lt;css src="style.css"&gt;</label>
+                    </div>
+                </div>
+
+                <div class="question" style="color: #2980b9;">
+                    <p><strong>Q5.</strong> Which HTML tag is used to define an internal stylesheet? <span style="float: right;">[5 Marks]</span></p>
+                    <div class="options">
+                        <label><input type="radio" name="q5" value="A"> A) &lt;script&gt;</label><br>
+                        <label><input type="radio" name="q5" value="B"> B) &lt;style&gt;</label><br>
+                        <label><input type="radio" name="q5" value="C"> C) &lt;css&gt;</label><br>
+                        <label><input type="radio" name="q5" value="D"> D) &lt;link&gt;</label>
+                    </div>
+                </div>
+
+                
+                <div class="question" style="color: #2980b9;">
+                    <p><strong>Q6.</strong> Which CSS property controls the text size? <span style="float: right;">[5 Marks]</span></p>
+                    <div class="options">
+                        <label><input type="radio" name="q6" value="A"> A) font-style</label><br>
+                        <label><input type="radio" name="q6" value="B"> B) text-size</label><br>
+                        <label><input type="radio" name="q6" value="C"> C) font-size</label><br>
+                        <label><input type="radio" name="q6" value="D"> D) text-style</label>
+                    </div>
+                </div>
+
+             
+                <div class="question" style="color: #2980b9;">
+                    <p><strong>Q7.</strong> What is the default display property of a div element? <span style="float: right;">[5 Marks]</span></p>
+                    <div class="options">
+                        <label><input type="radio" name="q7" value="A"> A) inline</label><br>
+                        <label><input type="radio" name="q7" value="B"> B) block</label><br>
+                        <label><input type="radio" name="q7" value="C"> C) flex</label><br>
+                        <label><input type="radio" name="q7" value="D"> D) inline-block</label>
+                    </div>
+                </div>
+
+               
+                <div class="question" style="color: #2980b9;">
+                    <p><strong>Q8.</strong> How do you select an element with id "header" in CSS? <span style="float: right;">[5 Marks]</span></p>
+                    <div class="options">
+                        <label><input type="radio" name="q8" value="A"> A) #header</label><br>
+                        <label><input type="radio" name="q8" value="B"> B) .header</label><br>
+                        <label><input type="radio" name="q8" value="C"> C) header</label><br>
+                        <label><input type="radio" name="q8" value="D"> D) *header</label>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+
+        <div class="footer">
+            <p>End of Paper</p>
+        </div>
+    </div>
+
+  
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var form = document.getElementById('mcqForm');
+
+            form.addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent form submission
+
+                
+                alert('Submitted successfully!');
+
+               
+            });
+
+            var radioButtons = document.querySelectorAll('input[type="radio"]');
+            radioButtons.forEach(function(radioButton) {
+                radioButton.addEventListener('change', function(event) {
+                    var selectedOption = event.target.value;
+                    var questionNumber = event.target.name.substr(1); // Extract question number
+
+                   
+                    alert('You have selected option ' + selectedOption + ' for Q' + questionNumber);
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>

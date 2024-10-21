@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    table {
+      width: 60%;
+      margin: 20px auto;
+      border-collapse: collapse;
+      background-color: #00FFFF;
+      background-image: url('kfc.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    th, td {
+      border: 2px solid #00CC11;
+      text-align: center;
+      padding: 10px;
+      font-size: 18px;
+      background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background to make text readable */
+    }
+    th {
+      background-color: rgba(0, 255, 255, 0.8);
+      font-size: 22px;
+      font-weight: bold;
+    }
+    td:nth-child(2), td:nth-child(3) {
+      background-color: rgba(255, 170, 0, 0.8);
+    }
+    td:nth-child(4) {
+      background-color: rgba(0, 0, 255, 0.8);
+      color: #FFFFFF;
+    }
+    .green {
+      background-color: rgba(0, 255, 0, 0.8);
+      color: #000000;
+    }
+    .blue {
+      background-color: rgba(0, 0, 255, 0.8);
+      color: #FFFFFF;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <tr>
+      <th rowspan="2">day</th>
+      <th colspan="2">schedule</th>
+      <th rowspan="2">seminar</th>
+      <th rowspan="2">topic</th>
+    </tr>
+    <tr>
+      <th>begin</th>
+      <th>end</th>
+    </tr>
+    <tr>
+      <td rowspan="2">Monday</td>
+      <td>8:00 a.m.</td>
+      <td>5:00 p.m.</td>
+      <td>Introduction to XML</td>
+      <td rowspan="2">Validity: DTD and Relax NG</td>
+    </tr>
+    <tr>
+      <td>8:00 a.m.</td>
+      <td>11:00 a.m.</td>
+      <td class="green">XPath</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Tuesday</td>
+      <td>11:00 a.m.</td>
+      <td>2:00 p.m.</td>
+      <td class="blue">XSL Transformations</td>
+      <td rowspan="2">XSL Transformations</td>
+    </tr>
+    <tr>
+      <td>2:00 p.m.</td>
+      <td>5:00 p.m.</td>
+      <td class="green">XSL Transformations</td>
+    </tr>
+    <tr>
+      <td>Wednesday</td>
+      <td>8:00 a.m.</td>
+      <td>12:00 p.m.</td>
+      <td class="blue">XSL Formatting Objects</td>
+      <td>XSL Formatting Objects</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Thursday</td>
+      <td>8:00 a.m.</td>
+      <td>5:00 p.m.</td>
+      <td>Introduction to XML</td>
+      <td rowspan="2">Validity: DTD and Relax NG</td>
+    </tr>
+    <tr>
+      <td>8:00 a.m.</td>
+      <td>11:00 a.m.</td>
+      <td class="green">XPath</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Friday</td>
+      <td>11:00 a.m.</td>
+      <td>2:00 p.m.</td>
+      <td class="blue">XSL Transformations</td>
+      <td rowspan="3">XSL Transformations</td>
+    </tr>
+    <tr>
+      <td>2:00 p.m.</td>
+      <td>5:00 p.m.</td>
+      <td class="green">XSL Transformations</td>
+    </tr>
+  </table>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Slideshow</title>
+  <style>
+    body {
+      height: 100vh;
+      width: 100vw;
+      background-image: url("img0.jpg"); 
+      background-size: cover;
+      transition: ease-in 0.7s;
+    }
+  </style>
+</head>
+<body>
+  
+  <script>
+    'use strict';
+    let n = 0;
+    const slideshow = function() {
+      setInterval(changebgBody, 2000);
+    }
+
+    const changebgBody = function() {
+      document.querySelector('body').style.backgroundImage = `url('img${n}.jpg')`;
+      n = (n + 1) % 3; 
+    }
+
+    slideshow();
+  </script>
+</body>
+</html>
